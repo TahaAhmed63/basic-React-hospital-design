@@ -1,0 +1,119 @@
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 924px;
+    margin: 0 auto;
+    top: 4rem;
+    position: relative;
+
+  }
+  
+  .button {
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #000;
+  }
+  .button2{
+    border-radius: 5px;
+    border: 1px solid #000;
+
+    height: 50px;
+
+  }
+  
+  .left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #FDF307;
+    cursor: pointer;
+  }
+  .left  span{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16.096px;
+line-height: 19px;
+letter-spacing: -0.07em;
+
+color: #959595;
+position: relative;
+position: relative;
+left: 10px;
+top: 10px;
+
+  }
+  .right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .right span{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16.096px;
+line-height: 19px;
+letter-spacing: -0.07em;
+
+color: #959595;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+  }
+
+  .oval {
+    width: calc(45.33% - 5px);
+    z-index: 1;
+  }
+  
+  .rectangle {
+    width: calc(27.33% - 10px);
+    background-color: #fff;
+   position: absolute;
+   z-index: 3;
+   cursor: pointer;
+    margin: 0 5px;
+  }
+  .rectangle span{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16.096px;
+line-height: 19px;
+letter-spacing: -0.07em;
+
+color: #959595;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    .container-3 {
+     display: flex !important;
+      align-items: stretch;
+      padding: 2rem;
+      top: 2rem;
+      width: 300px !important;
+    }
+    
+    .button, .button2 {
+      width: 200px !important;
+      margin-bottom: 1rem;
+    }
+    
+    .left, .right, .rectangle {
+      width: 118px !important;
+      border-radius: 25px;
+      margin-bottom: 1rem;
+    }
+    
+    .oval {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Poppins:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1117px;
+  width: 250px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for the sidebar container */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 240px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateX(-240px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 767px) {
+    /* Styles for the toggle button */
+    .sidebar-toggle {
+      display: block;
+      position: fixed;
+      top: 25px;
+      left: 19rem;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .line {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+    .line:nth-child(1) {
+      top: 0;
+    }
+    .line:nth-child(2),
+    .line:nth-child(3) {
+      top: 14px;
+    }
+    .line:nth-child(3) {
+      bottom: 0;
+    }
+    /* Styles for the open sidebar container */
+  
+    .sidebar.open {
+      transform: translateX(0%);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+/* Show the button on mobile devices */
+@media screen and (max-width: 767px) {
+  .sidebar-toggle {
+    display: block;
+  }
+}
+
+/* Toggle the sidebar when the button is clicked */
+.sidebar-toggle.active ~ .sidebar {
+  transform: translateX(0);
+}
+
+.sidebar-toggle.active .line:nth-of-type(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.sidebar-toggle.active .line:nth-of-type(2) {
+  opacity: 0;
+}
+
+
+  .sidebar-heading {
+    background-color: #fff;
+    justify-content: flex-start;
+    display: flex;
+width: 100%;
+height: 17%;
+flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar-heading p {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 35px;
+ position: relative;
+ left: 1rem;
+top: 1rem;
+
+
+    color: #323232;
+}
+
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+ 
+    padding: 0;
+}
+  
+  .sidebar-menu-item {
+    padding: 32px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 3px;
+}
+  
+  .sidebar-menu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .sidebar-menu-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .sidebar-menu-item.active {
+    color:#72AA83;
+  }
+  
+  .sidebar-logout {
+  width: 100%;
+  height: 100%;
+  
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: center;
+   
+}
+  
+  .logout-button:hover {
+    background-color: #c00;
+  }
+  
+
+
+  .sidebar-logout button{
+    width: 200px;
+height: 60px;
+left: 29px;
+position: relative;
+background: linear-gradient(180deg, #48AF78 0%, #42996B 100%);
+border-radius: 10px;
+color: #fff;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+
+
+
+  }
+  .credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .credit p{
+    color: #494949;
+    font-family: 'Lato';
+font-style: normal;
+font-size: 17px;
+  }
+ 

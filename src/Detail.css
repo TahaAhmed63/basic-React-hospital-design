@@ -1,0 +1,245 @@
+/* Box-sizing reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Poppins:wght@300&display=swap');* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+.req-head {
+  margin: 4% 4% 0 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.req-head h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28.5557px;
+  line-height: 43px;
+  color: #72AA83;
+}
+
+.box {
+  margin: 4% 1% 0 auto;
+  width: 924px;
+  height: 226px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* Box-sizing reset */
+  * {
+    box-sizing: border-box;
+  }
+  
+  .req-head {
+    margin: 4% 4% 0 -67px;
+  }
+  
+  .box {
+  margin: 4% 33% 0 5%;
+ 
+    width: 300px !important;
+  
+    height: 100% !important;
+}
+  
+  .my-box {
+    /* grid-template-rows: repeat(2, 1fr) !important;
+    gap: 5px !important;  */
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .box-head-1 h2 {
+    font-size: 20px;
+  }
+  
+  .box-head-1 p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .box-head-1 h3, .box-head-1 p {
+    text-align: center;
+  }
+  
+  .box-head-1 h2 {
+    margin: 0 0.5rem;
+  }
+  
+  .box-6 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box-6 span {
+    margin: 0 0 5px 0;
+  }
+  .oval {
+    width: calc(10.33% - 5px) !important;
+  }
+  
+  .line-10 {
+    top: 10px !important;
+    height: 50px !important;
+  }
+  
+  .box-6 p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .box-6 p {
+    margin: 0px 5px 0px 5px;
+  }
+  
+  /* appointment component CSS */
+  .main-box {
+    margin: 4% 3% 0px -24% !important;
+    border-radius: 20px;
+    height:100% !important;
+    width: 300px !important;
+  }
+  
+  .right-2 {
+    width: 100% !important;
+    height: auto;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 20px 20px !important;
+  }
+}
+
+.my-box {
+  top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  position: relative;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.box-head-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: green;
+  font-size: 24px;
+}
+
+.box-head-1 h2 {
+  margin: 0 20px;
+}
+
+.box-head-1 h3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #48AF78;
+  margin-bottom: 5px;
+}
+.box-head-1 p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.005em;
+  color: #959595;
+}
+.box-head-1 h3, .box-head-1 p {
+  margin: 0;
+}
+
+.box-head-1 h2 {
+  margin: 0 1rem;
+  color: green;
+
+}
+.box-6{
+  display: flex
+}
+.box-6 span {
+  display: flex;
+  margin: 0px 59px 0px 29px;
+  align-items: center;
+}
+.line-10 {
+  position: absolute;
+  width: 2px;
+  top: 12px;
+  height: 70.84px;
+  border: 1.3193px solid #95959542;
+  transform: rotate(181deg);
+}
+.box-6 p{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16.5813px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: -0.005em;
+
+color: #959595;
+
+}
+.box-6 p{
+  margin: 0px 18px 0px 18px;
+
+}
+
+
+
+/* appointment component css */
+.main-box{
+  margin: 4% 1% 0 auto;
+  background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+border-radius: 54px;
+height:669px;
+width: 924px;
+}
+
+.right-2{
+  background-color: #48AF78;
+  display: flex;
+  height: 100%;
+  width: 712px !important ;
+  justify-content: center;
+  align-items: center;
+  top: 4rem;
+  left: 2rem;
+  position: relative;
+}
