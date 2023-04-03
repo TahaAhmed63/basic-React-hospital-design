@@ -40,6 +40,11 @@ body {
   border: 1px solid #FFFFFF;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
+.item-wrap{
+  display: flex;
+  justify-content: center;
+
+}
 @media screen and (max-width: 1024px) {
   .box {
     width: 800px;
@@ -206,8 +211,19 @@ body {
 
 }
 .box-6{
-  display: flex
+  display: flex;
+  flex-direction: column;
 }
+.box-6 h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: green;
+  font-size: 24px;
+
+}
+
 .box-6 span {
   display: flex;
   margin: 0px 59px 0px 29px;

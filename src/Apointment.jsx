@@ -14,22 +14,26 @@ import Card from './Card'
           <p>Sarasota,FL. 33178</p>
         </div>
       </div>
-  <div className="item">
+      <div className="item">
     <div className="line-10"></div>
-  <div className="box-head-1">
+    <div className="item-wrap">
     <div className="box-6">
   <h3>10 </h3>
+  <p>October</p>
+</div>
 
 <span>-</span>
-  <h3>17</h3>
- 
-</div>
 <div className="box-6">
+  <h3>17</h3>
+  <p>December</p>
+ </div>
+ </div>
+{/* <div className="box-6">
   <p>October</p>
   <p>December</p>
-</div>
+</div> */}
 
-</div>
+
 
 </div>
   <div className="item">
