@@ -32,7 +32,7 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 11.096px;
+    font-size: 16.9257px;
     line-height: 19px;
     letter-spacing: -0.07em;
     color: #959595;
@@ -51,12 +51,12 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 9.096px;
+    font-size: 16px;
     line-height: 19px;
     color: #959595;
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     align-items: center;
     height: 100%;
 }
@@ -78,7 +78,7 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 13.096px;
+    font-size: 16.096px;
     line-height: 19px;
     letter-spacing: -0.07em;
     color: #959595;
@@ -100,11 +100,16 @@
       width: 166px !important;
       margin-bottom: 1rem;
     }
-    
+    .right span{
+      justify-content: flex-end !important;
+    }
     .left, .right, .rectangle {
       width: 118px !important;
       border-radius: 25px;
       margin-bottom: 1rem;
+    }
+    .left span, .right span, .rectangle span{
+      font-size: 11px !important;
     }
     
     .oval {
