@@ -54,6 +54,7 @@ const Detail = () => {
 <OvalButtons/>
       </div> 
     </div>
+
  
   </>
   

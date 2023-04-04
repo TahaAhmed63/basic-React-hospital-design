@@ -1,15 +1,15 @@
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 90px;
     margin-left: 2rem;
     margin-top: 8rem;
   }
   
   .card {
-    width: 270px;
-    height: 300px;
-    background-color: white;
+    width: 275px;
+    height: 220px;
+    background: #F5F4F4;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -47,6 +47,7 @@ top: 3rem;
   .card-content .para{
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   
   .card img {
@@ -60,7 +61,7 @@ top: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 11px;
+    gap: 37px;
   
     height: 100%;
 }
@@ -70,10 +71,10 @@ font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 15.2321px;
-line-height: 23px;
+
 /* identical to box height */
 
-letter-spacing: -0.07em;
+letter-spacing: -0.03em;
 
 color: #959595;
   }
@@ -91,11 +92,21 @@ color: #959595;
     font-size: 20px;
     font-weight: bold;
   }
+  .active-brown {
+    position: absolute;
+    width: 127px;
+    height: 40px;
+    left: 557px;
+color: white;
+    background: #D96A6B;
+    border-radius: 10px;
+}
   
-  .card-content p {
-    font-size: 16px;
-    margin-top: 10px;
-  }
+
+.card-content p {
+  font-size: 11px;
+  margin-top: -4px;
+}
   
   .green-button {
     
@@ -107,6 +118,7 @@ color: #959595;
     font-size: 17.5894px;
     line-height: 21px;
     letter-spacing: -0.07em;
+    margin-bottom: 35px;
     
     color: #FFFFFF;
     
@@ -125,13 +137,17 @@ color: #959595;
     }
     
     .card {
-      width: 90%;
-      height: auto;
+  width: 225px !important;
+  height: 226px !important;
       margin: 1rem auto;
+    }
+    .card-content .para {
+      display: flex;
+    flex-direction: row !important;
     }
     
     .card-header {
-      top: 0;
+      top: 34px;
     }
     
     .card img {
@@ -140,12 +156,16 @@ color: #959595;
     }
     
     .card-content {
-      flex-direction: column;
-      padding: 15px;
-    }
+      flex-direction: row;
+      gap: 0px;
+      padding: 0px !important;
+  }
     
     .card-content h2 {
       font-size: 18px;
+    }
+    .card span{
+      font-size: 16px;
     }
     
     .card-content p {

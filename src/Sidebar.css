@@ -20,7 +20,7 @@ body {
   box-shadow: 2px 0 10px rgba(0,0,0,.25);
   display: flex;
   flex-direction: column;
-  height: 1117px;
+  height: 1020px;
   left: 0;
   position: absolute;
   top: 0;
@@ -32,23 +32,25 @@ body {
     box-shadow: 2px 0 10px rgba(0,0,0,.25);
     display: flex;
     flex-direction: column;
-    height: 1117px;
+    height:990px;
     left: 0;
     position: absolute;
     top: 0;
     width: 197px;
   }
   .sidebar-logout button {
-    left: 10px !important;
+    left: 20px !important;
     width: 150px !important;
     height: 40px !important;
-  }
+}
 }
 
 .sidebar-toggle {
   display: none;
 }
-
+.burger-wrap{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   /* Styles for the sidebar container */
   .sidebar {
@@ -65,22 +67,29 @@ body {
     transform: translateX(-240px);
     transition: transform 0.3s ease-in-out;
   }
+  .burger-wrap {
+  
+    /* background-color: #e81d1d; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5rem;
+}
 
   /* Media query for mobile devices */
   @media only screen and (max-width: 767px) {
     /* Styles for the toggle button */
     .sidebar-toggle {
       display: block;
-      position: fixed;
+      position: relative;
       top: 25px;
-      left: 19rem;
-      width: 50px;
-      height: 50px;
+      left: 22.5rem;
+     
       background: transparent;
       border: none;
       cursor: pointer;
       z-index: 1001;
-    }
+  }
     .line {
       display: block;
       position: absolute;
@@ -114,6 +123,12 @@ body {
   .sidebar-toggle {
     display: block;
   }
+  .sidebar-logout button {
+    left: 48px !important;
+    width: 150px !important;
+    height: 40px
+ !important;
+}
 }
 
 /* Toggle the sidebar when the button is clicked */
@@ -158,7 +173,7 @@ top: 1rem;
     margin: 0;
     flex-direction: column;
     display: flex;
-    height: 100%;
+    height: 35%;
     width: 100%;
  
     padding: 0;
@@ -186,12 +201,16 @@ top: 1rem;
   .sidebar-menu-item.active {
     color:#72AA83;
   }
-  
+  @media screen and (max-width: 1024px) {
+   .sidebar-logout{
+    height: 0% !important;
+   }
+  }
   .sidebar-logout {
   width: 100%;
-  height: 100%;
+  height: 33%;
   
-    height: 100%;
+ 
     display: flex;
     cursor: pointer;
     flex-direction: column;
@@ -207,9 +226,9 @@ top: 1rem;
 
 
   .sidebar-logout button{
-    width: 200px;
-height: 60px;
-left: 10px;
+    width: 220px;
+    height: 70px;
+left: 5px;
 position: relative;
 background: linear-gradient(180deg, #48AF78 0%, #42996B 100%);
 border-radius: 10px;

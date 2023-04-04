@@ -15,10 +15,14 @@ body {
 }
 
 .req-head {
-  margin: 4% 4% 0 35px;
+  margin: 0% 0% 0 -17px;
   display: flex;
+  top: 44px;
+  width: 39%;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  height: 5%;
 }
 
 
@@ -34,7 +38,7 @@ body {
 
 .box {
   margin: 4% 1% 0 auto;
-  width: 924px;
+  width: 1114px;
   height: 226px;
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -46,20 +50,46 @@ body {
 
 }
 @media screen and (max-width: 1024px) {
+  .right-2{
+    width: 600px !important ;
+  }
   .box {
-    width: 800px;
+    width: 724px;
     height: 226px;
   }
   .container-3{
-    width: 800px !important;
+    width: 724px !important;
+    top: 2rem !important;
 
   }
+  html{
+    font-size: 15px;
+  }
+  .box-head-1 h3{
+    font-size: 17px !important ;
+  }
+  .box-6 h3{
+    font-size: 17px !important;
+  }
+  .req-head {
+    left: 24px;
+    top: 9px;
+    width: 100%;
+    font-size: 0px;
+}
   .main-box{
-    width: 800px !important;
+    width: 724px !important;
 
   }
   .card{
     width: 228px !important;
+  }
+  .card-container{
+    gap: 3px !important;
+    margin-left: 0 !important; 
+  }
+  .active-brown{
+    left: 400px !important;
   }
 
 
@@ -69,7 +99,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -78,11 +108,24 @@ body {
   * {
     box-sizing: border-box;
   }
-  
-  .req-head {
-    margin: 4% 4% 0 -67px;
+  .messageimage{
+    display: none !important;
   }
   
+  .req-head {
+    margin: 0% 0% 0 -67px;
+  }
+  .req-head h3{
+    font-size: 18px;
+  }
+  .active-brown {
+    left: 149px !important;
+    z-index: 1;
+    position: relative !important;
+    top: 58px;
+    width: 110px !important;
+    height: 40px !important;
+}
   .box {
   margin: 4% 33% 0 5%;
  
@@ -152,7 +195,7 @@ body {
     width: 100% !important;
     height: auto;
     top: 0;
-    left: 0;
+    left: 4.5rem!important;
     border-radius: 0 0 20px 20px !important;
   }
 }
@@ -188,7 +231,7 @@ body {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 27px;
   color: #48AF78;
   margin-bottom: 5px;
 }
@@ -219,8 +262,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: green;
-  font-size: 24px;
+  color: #48AF78;;
+  font-size: 27px;
 
 }
 
@@ -264,18 +307,41 @@ color: #959595;
 border: 1px solid #FFFFFF;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 border-radius: 54px;
-height:669px;
-width: 924px;
+height:526px;
+width: 1114px;
 }
 
 .right-2{
   background-color: #48AF78;
   display: flex;
   height: 100%;
-  width: 712px !important ;
-  justify-content: center;
+  width: 712px  ;
+  justify-content: left;
+  
   align-items: center;
   top: 4rem;
   left: 2rem;
   position: relative;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16.096px;
+line-height: 19px;
+
+
+color: #FFFFFF;
+}
+.messageimage{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  left: 3rem;
+  bottom:0rem;
+}
+.messageimage img{
+  width: 105px;
+  height: 105px;
 }

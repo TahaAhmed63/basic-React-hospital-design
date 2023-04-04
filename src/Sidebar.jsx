@@ -15,11 +15,9 @@ const Sidebar = () => {
   return (
     <>
         <button className="sidebar-toggle">
-        <button className="sidebar-toggle" onClick={handleToggle}>
-  <span className="line"></span>
-  <span className="line"></span>
-  <span className="line"></span>
-</button>
+        <div className="burger-wrap" onClick={handleToggle}>
+           <i className="fa-solid fa-bars burger"></i>
+            </div>
       </button>
       <div className={`sidebar${sidebarOpen ? ' open' : ''}`}>
       <div className="sidebar-heading">
