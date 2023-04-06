@@ -22,7 +22,7 @@ const Appointment = () => {
     <div className="container">
       {appointments.map((appointment) => (
         <div className="main-box" key={appointment.dateStart}>
-          <div className="container">
+    
             <div className="my-box">
               <div className="item">
                 <div className="box-head-1">
@@ -51,7 +51,7 @@ const Appointment = () => {
                   <p>{appointment.roomTypes}</p>
                 </div>
               </div>
-            </div>
+        
           </div>
           <div className="button  right-2">
             <span>{appointment.status}</span>
