@@ -46,7 +46,7 @@ body {
   height: 226px;
   display: flex;
   flex-direction: column;
-  flex-shrink: 1;
+  flex-shrink: 4;
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
